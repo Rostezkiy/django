@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e563e84-b73a-4360-880b-035d517645e8" name="Changes" comment="init" />
+    <list default="true" id="5e563e84-b73a-4360-880b-035d517645e8" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devices/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/devices/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devices/templates/devices/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/devices/templates/devices/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devices/templates/devices/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/devices/templates/devices/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devices/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/devices/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +27,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2M0B92Ci8xdat2TUMf6fBLZyW7P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,13 +36,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -73,6 +80,7 @@
       <updated>1676894466669</updated>
       <workItem from="1676894468726" duration="1044000" />
       <workItem from="1677590896475" duration="6866000" />
+      <workItem from="1677701571212" duration="6889000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1677701305143</created>

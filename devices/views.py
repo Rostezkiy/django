@@ -12,6 +12,7 @@ from .forms import *
 from .models import *
 from .utils import *
 
+
 class DevicesHome(DataMixin, ListView):
     model = Devices
     template_name = 'Devices/index.html'
@@ -41,10 +42,10 @@ class DevicesHome(DataMixin, ListView):
 def about(request):
     contact_list = Devices.objects.all()
     paginator = Paginator(contact_list, 3)
-
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    return render(request, 'Devices/about.html', {'page_obj': page_obj, 'menu': menu, 'title': 'О сайте'})
+    return render(request, 'devices/about.html',
+                  {'page_obj': page_obj, 'menu': menu, 'title': 'Опубликованные модели на сайте:'})
 
 
 class AddPage(LoginRequiredMixin, DataMixin, CreateView):
@@ -77,6 +78,7 @@ class AddPage(LoginRequiredMixin, DataMixin, CreateView):
 
 def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1>Страница не найдена</h1>')
+
 
 # def show_post(request, post_slug):
 #     post = get_object_or_404(Devices, slug=post_slug)
@@ -162,6 +164,7 @@ class LoginUser(DataMixin, LoginView):
     def get_success_url(self):
         return reverse_lazy('home')
 
+
 class ContactFormView(DataMixin, FormView):
     form_class = ContactForm
     template_name = 'devices/contact.html'
@@ -175,6 +178,7 @@ class ContactFormView(DataMixin, FormView):
     def form_valid(self, form):
         print(form.cleaned_data)
         return redirect('home')
+
 
 def logout_user(request):
     logout(request)
